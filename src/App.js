@@ -70,8 +70,8 @@ function App() {
         className="dropdown"
       >
         <option>Select Country</option>
-        {countries.map((country) => (
-          <option value={country}>{country}</option>
+        {countries.map((country,idx) => (
+          <option value={country} key={idx}>{country}</option>
         ))}
       </select>
       <select
@@ -80,8 +80,8 @@ function App() {
         className="dropdown"
       >
         <option>Select State</option>
-        {states.map((state) => (
-          <option value={state}>{state}</option>
+        {states.map((state,idx) => (
+          <option value={state} key={idx}>{state}</option>
         ))}
       </select>
       <select
@@ -90,8 +90,8 @@ function App() {
         className="dropdown"
       >
         <option>Select City</option>
-        {cities.map((city) => (
-          <option value={city}>{city}</option>
+        {cities.map((city,idx) => (
+          <option value={city} key={idx}>{city}</option>
         ))}
       </select>
       </div>
